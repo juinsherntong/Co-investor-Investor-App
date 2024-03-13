@@ -13,14 +13,14 @@ legend = Image.open('Legend.png')
 
 ### CSS + Streamlit markdown (Edit layout and aesthetics)
 hide_img_fs = '''
-# <style>
-# button[title="View fullscreen"]{
-#     visibility: hidden;}  
+<style>
+button[title="View fullscreen"]{
+    visibility: hidden;}  
 
-.css-18ni7ap{
-    background-color: #0E1117;} 
-.css-9s5bis{
-    color: #FFFFFF;}
+# .css-18ni7ap{
+#     background-color: #0E1117;} 
+# .css-9s5bis{
+#     color: #FFFFFF;}
 
 .css-nigb8g{
     color: #FFFFFF;}
