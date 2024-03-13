@@ -45,9 +45,9 @@ st.markdown(streamlit_style, unsafe_allow_html=True)
 # Correct color for dark mode
 color = '#262730'
 
-css=f'''
+css = f'''
 [data-testid="stSidebarNav"] {{
-    position:absolute;
+    position: absolute;
     bottom: 0;
     z-index: 1;
     background: {color};
@@ -56,7 +56,7 @@ css=f'''
     padding-top: 2rem;
 }}
 [data-testid="stSidebarNav"] > div {{
-    position:absolute;
+    position: absolute;
     top: 0;
 }}
 [data-testid="stSidebarNav"] > div > svg {{
@@ -65,6 +65,9 @@ css=f'''
 [data-testid="stSidebarNav"] + div {{
     overflow: scroll;
     max-height: 66vh;
+}}
+#logo {{
+    overflow: hidden;  /* or overflow: auto; depending on your preference */
 }}
 '''
 
