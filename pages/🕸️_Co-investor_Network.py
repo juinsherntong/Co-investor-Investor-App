@@ -22,10 +22,10 @@ button[title="View fullscreen"]{
 # .css-9s5bis{
 #     color: #FFFFFF;}
 
-.css-nigb8g{
-    color: #FFFFFF;}
-.css-fblp2m{
-    color: #FFFFFF;}   
+# .css-nigb8g{
+#     color: #FFFFFF;}
+# .css-fblp2m{
+#     color: #FFFFFF;}   
 
 .css-6qob1r{
     background-color: #262730;}
