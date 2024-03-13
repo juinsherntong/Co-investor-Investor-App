@@ -21,18 +21,13 @@ button[title="View fullscreen"]{
 </style>
 '''
 
-
 st.markdown(hide_img_fs, unsafe_allow_html=True)
 
 ### Image in main panel (Co-investor Network Diagram)
 st.image(mn_title, width=700)
 
-### User guide expander (Main panel)
-with st.expander('User Guide', expanded=False):
-    st.write("First-time user? It's great to have you. Let's watch a short [tutorial video](https://drive.google.com/file/d/1SrEui4Qq-7T7k32A6UfsHZRtQpbpfEWa/view?usp=sharing) to get started :eyes:.")
-
 ### Image in sidebar (500 Data and Insights)
-st.sidebar.image(sb_title, width=250)
+st.sidebar.image(sb_title, width=300)
 
 streamlit_style = """
 			<style>
@@ -43,6 +38,7 @@ streamlit_style = """
 			}
 			</style>
 			"""
+
 st.markdown(streamlit_style, unsafe_allow_html=True)
 
 #____
