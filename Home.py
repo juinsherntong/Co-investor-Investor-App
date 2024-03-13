@@ -46,12 +46,12 @@ st.markdown(streamlit_style, unsafe_allow_html=True)
 color = '#262730'
 
 css = f'''
-# [data-testid="stSidebarNav"] {{
-#     position: absolute;
-#     bottom: 0;
-#     z-index: 1;
-#     background: {color};
-# }}
+[data-testid="stSidebarNav"] {{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    background: {color};
+}}
 [data-testid="stSidebarNav"] > ul {{
     padding-top: 2rem;
 }}
