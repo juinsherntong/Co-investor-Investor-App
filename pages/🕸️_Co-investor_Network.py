@@ -20,7 +20,7 @@ button[title="View fullscreen"]{
 .css-5uatcg {
     background-color: #0E1117;
     color: #FFFFFF;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #D2D2D2;
     position: absolute;
     left: 82%;
     border-radius: 8px;}  
