@@ -43,7 +43,7 @@ st.markdown(streamlit_style, unsafe_allow_html=True)
 
 #____
 # Correct color for dark mode
-color = '#262730'
+# color = '#262730'
 
 css = f'''
 [data-testid="stSidebarNav"] {{
