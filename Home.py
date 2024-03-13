@@ -62,12 +62,9 @@ css = f'''
 [data-testid="stSidebarNav"] > div > svg {{
     transform: rotate(180deg) !important;
 }}
-# [data-testid="stSidebarNav"] + div {{
-#     overflow: scroll;
-#     max-height: 66vh;
-# }}
-# #logo {{
-#     overflow: hidden !important;  /* or overflow: auto !important; depending on your preference */
+[data-testid="stSidebarNav"] + div {{
+    overflow: scroll;
+    max-height: 66vh;
 }}
 '''
 
