@@ -110,3 +110,14 @@ with st.expander('User Guide', expanded=False):
 
 ### Image in sidebar (500 Data and Insights)
 st.sidebar.image(sb_title, width=300)
+
+streamlit_style = """
+			<style>
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+			html, body, [class*="css"]  {
+			font-family: 'Roboto', sans-serif;
+			}
+			</style>
+			"""
+st.markdown(streamlit_style, unsafe_allow_html=True)
