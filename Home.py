@@ -119,12 +119,6 @@ streamlit_style = """
 st.markdown(streamlit_style, unsafe_allow_html=True)
 
 #____
-for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
-    st.sidebar.button(letter)
-
-# If you have a theme specified, you can get the color through get_option
-# color = st.get_option('theme.secondaryBackgroundColor')
-
 # Correct color for dark mode
 color = '#262730'
 
