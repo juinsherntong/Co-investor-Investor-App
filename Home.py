@@ -20,4 +20,4 @@ legend = Image.open('Legend.png')
 st.markdown(hide_img_fs, unsafe_allow_html=True)
 
 ### Image in main panel (Co-investor Network Diagram)
-st.image(sb_title, width=700)
+st.sidebar.image(sb_title, width=300)
