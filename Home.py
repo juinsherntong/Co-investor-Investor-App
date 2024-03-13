@@ -117,3 +117,38 @@ streamlit_style = """
 			</style>
 			"""
 st.markdown(streamlit_style, unsafe_allow_html=True)
+
+#____
+for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
+    st.sidebar.button(letter)
+
+# If you have a theme specified, you can get the color through get_option
+# color = st.get_option('theme.secondaryBackgroundColor')
+
+# Correct color for dark mode
+color = '#262730'
+
+css=f'''
+[data-testid="stSidebarNav"] {{
+    position:absolute;
+    bottom: 0;
+    z-index: 1;
+    background: {color};
+}}
+[data-testid="stSidebarNav"] > ul {{
+    padding-top: 2rem;
+}}
+[data-testid="stSidebarNav"] > div {{
+    position:absolute;
+    top: 0;
+}}
+[data-testid="stSidebarNav"] > div > svg {{
+    transform: rotate(180deg) !important;
+}}
+[data-testid="stSidebarNav"] + div {{
+    overflow: scroll;
+    max-height: 66vh;
+}}
+'''
+
+st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
