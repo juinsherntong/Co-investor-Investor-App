@@ -105,7 +105,7 @@ with st.expander('User Guide', expanded=False):
     st.write("First-time user? It's great to have you. Let's watch a short [tutorial video](https://drive.google.com/file/d/1SrEui4Qq-7T7k32A6UfsHZRtQpbpfEWa/view?usp=sharing) to get started :eyes:.")
 
 ### Image in sidebar (500 Data and Insights)
-st.sidebar.image(sb_title, width=300)
+st.sidebar.image(sb_title, width=200)
 
 streamlit_style = """
 			<style>
