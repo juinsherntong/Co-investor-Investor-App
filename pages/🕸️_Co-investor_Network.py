@@ -17,19 +17,12 @@ hide_img_fs = '''
 button[title="View fullscreen"]{
     visibility: hidden;}  
 
-.st-ew {
-    fill: black;
-    border: 1px solid #FFFFFF;}
-
-.css-9s5bis {
-    line-color: #FFFFFF;}
-
-# .st-ds {
-#     border: transparent;}
-# #root > div:nth-child(1) > div.withScreencast > div > div > div > section.css-163ttbj.e1fqkh3o11 > div.css-6qob1r.e1fqkh3o3 > div.css-1vq4p4l.e1fqkh3o4 > div > div:nth-child(1) > div > div:nth-child(2) > ul > li > div.st-am.st-ce.st-cf.st-cg.st-ch > div > div:nth-child(1) > div > div > div {
-#     color: #FFFFFF;}
-# .st-gs {
-#     border: transparent;}
+.st-ds {
+    border: transparent;}
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section.css-163ttbj.e1fqkh3o11 > div.css-6qob1r.e1fqkh3o3 > div.css-1vq4p4l.e1fqkh3o4 > div > div:nth-child(1) > div > div:nth-child(2) > ul > li > div.st-am.st-ce.st-cf.st-cg.st-ch > div > div:nth-child(1) > div > div > div {
+    color: #FFFFFF;}
+.st-gs {
+    border: transparent;}
 
 # .css-5uatcg {
 #     background-color: #0E1117;
