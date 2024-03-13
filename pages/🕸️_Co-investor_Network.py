@@ -1,4 +1,4 @@
-### Import libraries and packages
+# Import libraries and packages
 import streamlit as st
 import streamlit.components.v1 as components
 import pandas as pd
@@ -6,12 +6,12 @@ import networkx as nx
 from pyvis.network import Network
 from PIL import Image
 
-### Import images
+# Import images
 sb_title = Image.open('Sidebar title.png')
 mn_title = Image.open('Main title.png')
 legend = Image.open('Legend.png')
 
-### CSS + Streamlit markdown (Edit layout and aesthetics)
+# CSS
 hide_img_fs = '''
 <style>
 button[title="View fullscreen"]{
@@ -23,21 +23,10 @@ button[title="View fullscreen"]{
     border: 1px solid #FFFFFF;
     position: absolute;
     left: 82%;
-    border-radius: 8px;}
-    
-# .st-ew {
-#     border: transparent;}
-# .st-fj {
-#     border: transparent;}
- 
-# #root > div:nth-child(1) > div.withScreencast > div > div > div > section.main.css-k1vhr4.egzxvld3 > div > div:nth-child(1) > div > div.css-1fcdlhc.e1s6o5jp0 > ul > li > div.st-am.st-cf.st-cg.st-ch.st-ci > div > div:nth-child(1){
-#     color: #FFFFFF;}
-
+    border-radius: 8px;}  
 </style>
 '''
-#-----
-#____
-# Correct color for dark mode
+
 color = '' #'#262730'
 
 css = f'''
