@@ -91,8 +91,37 @@ button[title="View fullscreen"]{
 
 </style>
 '''
+#-----
+#____
+# Correct color for dark mode
+color = '#262730'
 
+css=f'''
+[data-testid="stSidebarNav"] {{
+    position:absolute;
+    bottom: 0;
+    z-index: 1;
+    background: {color};
+}}
+[data-testid="stSidebarNav"] > ul {{
+    padding-top: 2rem;
+}}
+[data-testid="stSidebarNav"] > div {{
+    position:absolute;
+    top: 0;
+}}
+[data-testid="stSidebarNav"] > div > svg {{
+    transform: rotate(180deg) !important;
+}}
+[data-testid="stSidebarNav"] + div {{
+    overflow: scroll;
+    max-height: 66vh;
+}}
+'''
 
+st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
+
+#------
 st.markdown(hide_img_fs, unsafe_allow_html=True)
 
 ### Image in main panel (Co-investor Network Diagram)
@@ -436,31 +465,3 @@ st.write("")
 st.caption("DISCLAIMER: This app, network diagram, and underlying data is for 500 Global's internal use only. Please do not share information externally without going through the appropriate and relevant legal and marketing channels.")
 
 
-#____
-# Correct color for dark mode
-color = '#262730'
-
-css=f'''
-[data-testid="stSidebarNav"] {{
-    position:absolute;
-    bottom: 0;
-    z-index: 1;
-    background: {color};
-}}
-[data-testid="stSidebarNav"] > ul {{
-    padding-top: 2rem;
-}}
-[data-testid="stSidebarNav"] > div {{
-    position:absolute;
-    top: 0;
-}}
-[data-testid="stSidebarNav"] > div > svg {{
-    transform: rotate(180deg) !important;
-}}
-[data-testid="stSidebarNav"] + div {{
-    overflow: scroll;
-    max-height: 66vh;
-}}
-'''
-
-st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
