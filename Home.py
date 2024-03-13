@@ -113,7 +113,7 @@ st.sidebar.image(sb_title, width=300)
 
 streamlit_style = """
 			<style>
-			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+			@import url('https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet');
 
 			html, body, [class*="css"]  {
 			font-family: 'Roboto', sans-serif;
