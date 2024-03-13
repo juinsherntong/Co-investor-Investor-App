@@ -94,11 +94,11 @@ button[title="View fullscreen"]{
 #-----
 #____
 # Correct color for dark mode
-color = '#262730'
+color = '' #'#262730'
 
-css=f'''
+css = f'''
 [data-testid="stSidebarNav"] {{
-    position:absolute;
+    position: absolute;
     bottom: 0;
     z-index: 1;
     background: {color};
@@ -107,15 +107,11 @@ css=f'''
     padding-top: 2rem;
 }}
 [data-testid="stSidebarNav"] > div {{
-    position:absolute;
+    position: absolute;
     top: 0;
 }}
 [data-testid="stSidebarNav"] > div > svg {{
     transform: rotate(180deg) !important;
-}}
-[data-testid="stSidebarNav"] + div {{
-    overflow: scroll;
-    max-height: 66vh;
 }}
 '''
 
