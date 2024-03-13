@@ -67,7 +67,7 @@ css = f'''
     max-height: 66vh;
 }}
 #logo {{
-    overflow: hidden;  /* or overflow: auto; depending on your preference */
+    overflow: hidden !important;  /* or overflow: auto !important; depending on your preference */
 }}
 '''
 
