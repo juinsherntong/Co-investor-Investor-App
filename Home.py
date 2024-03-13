@@ -62,10 +62,10 @@ css = f'''
 [data-testid="stSidebarNav"] > div > svg {{
     transform: rotate(180deg) !important;
 }}
-[data-testid="stSidebarNav"] + div {{
-    overflow: scroll;
-    max-height: 66vh;
-}}
+# [data-testid="stSidebarNav"] + div {{
+#     overflow: scroll;
+#     max-height: 66vh;
+# }}
 '''
 
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
