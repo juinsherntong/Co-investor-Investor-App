@@ -17,36 +17,6 @@ hide_img_fs = '''
 button[title="View fullscreen"]{
     visibility: hidden;}  
 
-# .css-18ni7ap{
-#     background-color: #0E1117;} 
-# .css-9s5bis{
-#     color: #FFFFFF;}
-
-# .css-nigb8g{
-#     color: #FFFFFF;}
-# .css-fblp2m{
-#     color: #FFFFFF;}   
-
-.css-6qob1r{
-    background-color: #262730;}
- 
-.st-ds {
-    color: #FFFFFF;}
-.css-1inwz65 {
-    color: #FFFFFF;}
-.css-81oif8 {
-    color: #FFFFFF;}
-.css-1aqmucy svg {
-    fill: #FFFFFF;}
-#root > div:nth-child(1) > div.withScreencast > div > div > div > section.css-163ttbj.e1fqkh3o11 > div.css-6qob1r.e1fqkh3o3 > div.css-1vq4p4l.e1fqkh3o4 > div > div:nth-child(1) > div > div:nth-child(2) > ul > li > div.st-am.st-cd.st-ce.st-cf.st-cg > div > div:nth-child(1) > div > div > div > div > p {
-    color: #FFFFFF;}
-[role="button"] {
-    color: #FFFFFF;}
-[role="button"] {
-    border: 1px solid #505158;}
-.st-af {
-    border: 1px solid #505158;}
-
 .css-1x8cf1d{
     background-color: #0E1117;
     color: #FFFFFF;
