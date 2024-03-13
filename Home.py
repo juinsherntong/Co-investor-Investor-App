@@ -15,7 +15,6 @@ st.title('Home page')
 ### Import images
 sb_title = Image.open('Sidebar title.png')
 mn_title = Image.open('Main title.png')
-legend = Image.open('Legend.png')
 
 ### CSS + Streamlit markdown (Edit layout and aesthetics)
 hide_img_fs = '''
@@ -102,7 +101,7 @@ button[title="View fullscreen"]{
 st.markdown(hide_img_fs, unsafe_allow_html=True)
 
 ### Image in main panel (Co-investor Network Diagram)
-# st.image(mn_title, width=700)
+st.image(mn_title, width=700)
 
 ### User guide expander (Main panel)
 with st.expander('User Guide', expanded=False):
