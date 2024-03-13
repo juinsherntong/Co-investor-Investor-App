@@ -434,3 +434,40 @@ st.caption("Last update: 4 January 2024")
 st.caption("The network diagram above shows 500 Global's co-investment network (portfolio companies and co-investors). The data is sourced primarily from PitchBook, complemented with 500's internal data, as of Q4 2023. If you have questions about the app or visualization, please reach out to the Data & Insights team via the [#data](https://500global.slack.com/archives/C4HMV4AN5) Slack channel or visit the [Project KB](https://sites.google.com/500startups.com/data/initiatives-programs/038-co-investor-network?authuser=0) for more info.")
 st.write("")
 st.caption("DISCLAIMER: This app, network diagram, and underlying data is for 500 Global's internal use only. Please do not share information externally without going through the appropriate and relevant legal and marketing channels.")
+
+#____
+import streamlit as st
+
+for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
+    st.sidebar.button(letter)
+
+# If you have a theme specified, you can get the color through get_option
+# color = st.get_option('theme.secondaryBackgroundColor')
+
+# Correct color for dark mode
+color = '#262730'
+
+css=f'''
+[data-testid="stSidebarNav"] {{
+    position:absolute;
+    bottom: 0;
+    z-index: 1;
+    background: {color};
+}}
+[data-testid="stSidebarNav"] > ul {{
+    padding-top: 2rem;
+}}
+[data-testid="stSidebarNav"] > div {{
+    position:absolute;
+    top: 0;
+}}
+[data-testid="stSidebarNav"] > div > svg {{
+    transform: rotate(180deg) !important;
+}}
+[data-testid="stSidebarNav"] + div {{
+    overflow: scroll;
+    max-height: 66vh;
+}}
+'''
+
+st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
