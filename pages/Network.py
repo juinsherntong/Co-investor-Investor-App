@@ -6,10 +6,10 @@ import networkx as nx
 from pyvis.network import Network
 from PIL import Image
 
-### Import images
-sb_title = Image.open('Sidebar title.png')
-mn_title = Image.open('Main title.png')
-legend = Image.open('Legend.png')
+# ### Import images
+# sb_title = Image.open('Sidebar title.png')
+# mn_title = Image.open('Main title.png')
+# legend = Image.open('Legend.png')
 
 ### CSS + Streamlit markdown (Edit layout and aesthetics)
 hide_img_fs = '''
