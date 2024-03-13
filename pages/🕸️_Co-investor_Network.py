@@ -29,35 +29,35 @@ button[title="View fullscreen"]{
 .css-rvekum p {
     color: #FFFFFF;}
 
-.st-ew {
-    fill: black;
-    border: 1px solid #FFFFFF;}
+# .st-ew {
+#     fill: black;
+#     border: 1px solid #FFFFFF;}
 
-.css-9s5bis {
-    line-color: #FFFFFF;}
+# .css-9s5bis {
+#     line-color: #FFFFFF;}
 
-.st-ds {
-    border: transparent;}
-#root > div:nth-child(1) > div.withScreencast > div > div > div > section.css-163ttbj.e1fqkh3o11 > div.css-6qob1r.e1fqkh3o3 > div.css-1vq4p4l.e1fqkh3o4 > div > div:nth-child(1) > div > div:nth-child(2) > ul > li > div.st-am.st-ce.st-cf.st-cg.st-ch > div > div:nth-child(1) > div > div > div {
-    color: #FFFFFF;}
-.st-gs {
-    border: transparent;}
+# .st-ds {
+#     border: transparent;}
+# #root > div:nth-child(1) > div.withScreencast > div > div > div > section.css-163ttbj.e1fqkh3o11 > div.css-6qob1r.e1fqkh3o3 > div.css-1vq4p4l.e1fqkh3o4 > div > div:nth-child(1) > div > div:nth-child(2) > ul > li > div.st-am.st-ce.st-cf.st-cg.st-ch > div > div:nth-child(1) > div > div > div {
+#     color: #FFFFFF;}
+# .st-gs {
+#     border: transparent;}
 
-.css-5uatcg {
-    background-color: #0E1117;
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    position: absolute;
-    left: 82%;
-    border-radius: 8px;}
+# .css-5uatcg {
+#     background-color: #0E1117;
+#     color: #FFFFFF;
+#     border: 1px solid #FFFFFF;
+#     position: absolute;
+#     left: 82%;
+#     border-radius: 8px;}
     
-.st-ew {
-    border: transparent;}
-.st-fj {
-    border: transparent;}
+# .st-ew {
+#     border: transparent;}
+# .st-fj {
+#     border: transparent;}
  
-#root > div:nth-child(1) > div.withScreencast > div > div > div > section.main.css-k1vhr4.egzxvld3 > div > div:nth-child(1) > div > div.css-1fcdlhc.e1s6o5jp0 > ul > li > div.st-am.st-cf.st-cg.st-ch.st-ci > div > div:nth-child(1){
-    color: #FFFFFF;}
+# #root > div:nth-child(1) > div.withScreencast > div > div > div > section.main.css-k1vhr4.egzxvld3 > div > div:nth-child(1) > div > div.css-1fcdlhc.e1s6o5jp0 > ul > li > div.st-am.st-cf.st-cg.st-ch.st-ci > div > div:nth-child(1){
+#     color: #FFFFFF;}
 
 </style>
 '''
