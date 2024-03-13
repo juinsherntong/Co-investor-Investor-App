@@ -17,24 +17,12 @@ hide_img_fs = '''
 button[title="View fullscreen"]{
     visibility: hidden;}  
 
-.css-1x8cf1d{
-    background-color: #0E1117;
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    position: absolute;
-    left: 75%;
-    border-radius: 8px;}
-.css-k1vhr4 {
-    background-color: #0E1117;}
-.css-rvekum p {
-    color: #FFFFFF;}
+.st-ew {
+    fill: black;
+    border: 1px solid #FFFFFF;}
 
-# .st-ew {
-#     fill: black;
-#     border: 1px solid #FFFFFF;}
-
-# .css-9s5bis {
-#     line-color: #FFFFFF;}
+.css-9s5bis {
+    line-color: #FFFFFF;}
 
 # .st-ds {
 #     border: transparent;}
