@@ -6,8 +6,3 @@ st.set_page_config(
 
 st.title('Home page')
 st.sidebar.success('Select a page below')
-
-### Import images
-sb_title = Image.open('Sidebar title.png')
-mn_title = Image.open('Main title.png')
-legend = Image.open('Legend.png')
