@@ -81,7 +81,7 @@ HQ_region_drp = [item for item in HQ_region_drp if item != '']
 HQ_region_drp = [item for item in HQ_region_drp if pd.notna(item)]
 
 
-with st.sidebar.expander('Filters for Investors'):
+with st.sidebar.expander('Investor demographic'):
     inv_categories = st.multiselect('Investor categories',
                                     inv_categories_drp,
                                     'All',
