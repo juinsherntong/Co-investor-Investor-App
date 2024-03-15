@@ -66,7 +66,7 @@ inv_categories_drp.insert(0, 'All')
 inv_categories_drp.remove('Investor')
 inv_categories_drp = [item for item in inv_categories_drp if item != '']
 
-with st.sidebar.expander('Filters for Investors'):
+with st.sidebar('Filters for Investors'):
     inv_categories = st.multiselect('Investor categories',
                                     inv_categories_drp,
                                     'All',
