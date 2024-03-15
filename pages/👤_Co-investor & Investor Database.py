@@ -68,7 +68,7 @@ inv_categories_drp = [item for item in inv_categories_drp if item != '']
 
 with st.sidebar.expander('Filters for Investors'):
     inv_categories = st.multiselect('Investor categories',
-                                    inv_categories_drp)
+                                    inv_categories_drp,
                                     'All',
                                     help='Investor categories...')
 
