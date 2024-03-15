@@ -8,8 +8,7 @@ from PIL import Image
 
 # Import images
 sb_title = Image.open('Sidebar title.png')
-# mn_title = Image.open('Main title.png')
-# legend = Image.open('Legend.png')
+mn_title = Image.open('Main title.png')
 
 # CSS
 hide_img_fs = '''
@@ -50,6 +49,11 @@ css = f'''
 
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
+#------
+st.markdown(hide_img_fs, unsafe_allow_html=True)
+
+### Image in main panel (Co-investor Network Diagram)
+st.image(mn_title, width=700)
+
 ### Image in sidebar (500 Data and Insights)
 st.sidebar.image(sb_title, width=300)
-
