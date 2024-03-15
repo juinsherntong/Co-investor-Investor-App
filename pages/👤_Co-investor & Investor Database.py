@@ -58,4 +58,4 @@ st.image(mn_title, width=700)
 st.sidebar.image(sb_title, width=300)
 
 db_data = pd.read_csv('Data/Co-investor & Investor Database.csv')
-st.dataframe(db_data, width=10)
+st.dataframe(db_data, width=100)
