@@ -52,7 +52,7 @@ st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 st.markdown(hide_img_fs, unsafe_allow_html=True)
 
 # Image in main panel (Co-investor / Investor DB)
-st.image(mainn_title, width=700)
+st.image(main_title, width=700)
 
 # Image in sidebar (500 Data and Insights)
 st.sidebar.image(sidebar_title, width=300)
