@@ -113,20 +113,20 @@ pref_industry_drp.insert(0, 'All')
 pref_industry_drp = [item for item in pref_industry_drp if item != '']
 pref_industry_drp = [item for item in pref_industry_drp if pd.notna(item)]
 
-pref_vertical_drp = list(db_data['Preferred Vertical'].str.split(', ').explode('Preferred Vertical').drop_duplicates().sort_values())
-pref_vertical_drp.insert(0, 'All')
-pref_vertical_drp = [item for item in pref_vertical_drp if item != '']
-pref_vertical_drp = [item for item in pref_vertical_drp if pd.notna(item)]
+# pref_vertical_drp = list(db_data['Preferred Vertical'].str.split(', ').explode('Preferred Vertical').drop_duplicates().sort_values())
+# pref_vertical_drp.insert(0, 'All')
+# pref_vertical_drp = [item for item in pref_vertical_drp if item != '']
+# pref_vertical_drp = [item for item in pref_vertical_drp if pd.notna(item)]
 
 with st.sidebar.expander('Investment Preference'):
     pref_industries = st.multiselect('Preferred industry',
                                     pref_industry_drp,
                                     'All',
                                     help='Preferred industry...')
-    pref_verticals = st.multiselect('Preferred vertical',
-                                    pref_vertical_drp,
-                                    'All',
-                                    help='Preferred verticals...')
+    # pref_verticals = st.multiselect('Preferred vertical',
+    #                                 pref_vertical_drp,
+    #                                 'All',
+    #                                 help='Preferred verticals...')
 
 # Display the dataframe as output
 st.dataframe(db_data)
