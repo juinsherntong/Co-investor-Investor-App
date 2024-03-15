@@ -60,7 +60,7 @@ st.sidebar.image(sidebar_title, width=300)
 # Read CSV file (Co-investor & Investor Database.csv)
 db_data = pd.read_csv('Data/Co-investor & Investor Database.csv')
 
-# Side bar (filters, dropdowns, etc)
+# Side bar - investor demographic
 inv_categories_drp = list(db_data['Investor Categories'].str.split('; ').explode('Investor Categories').drop_duplicates().sort_values())
 inv_categories_drp.insert(0, 'All')
 inv_categories_drp.remove('Investor')
