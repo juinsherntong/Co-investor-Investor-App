@@ -107,7 +107,16 @@ with st.sidebar.expander('Investor Demographic'):
                                     'All',
                                     help='HQ sub-regions...')
 
+# Side bar - investment preferences
+pref_industry_drp = list(db_data['Preferred Industry'].str.split('; ').explode('Preferred Industry').drop_duplicates().sort_values())
+pref_industry_drp.insert(0, 'All')
+pref_industry_drp = [item for item in pref_industry_drp if item != '']
 
+with st.sidebar.expander('Investment Preference'):
+    pref_industries = st.multiselect('Preferred industry',
+                                    pref_industry_drp,
+                                    'All',
+                                    help='Preferred industry...')
 
 # Display the dataframe as output
 st.dataframe(db_data)
