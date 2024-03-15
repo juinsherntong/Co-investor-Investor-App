@@ -7,8 +7,8 @@ from pyvis.network import Network
 from PIL import Image
 
 # Import images
-sb_title = Image.open('Sidebar title.png')
-mn_title = Image.open('Main title.png')
+sidebar_title = Image.open('Sidebar title.png')
+main_title = Image.open('Main title.png')
 
 # CSS
 hide_img_fs = '''
@@ -51,11 +51,23 @@ st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
 st.markdown(hide_img_fs, unsafe_allow_html=True)
 
-### Image in main panel (Co-investor Network Diagram)
-st.image(mn_title, width=700)
+# Image in main panel (Co-investor / Investor DB)
+st.image(mainn_title, width=700)
 
-### Image in sidebar (500 Data and Insights)
-st.sidebar.image(sb_title, width=300)
+# Image in sidebar (500 Data and Insights)
+st.sidebar.image(sidebar_title, width=300)
 
+# Read CSV file (Co-investor & Investor Database.csv)
 db_data = pd.read_csv('Data/Co-investor & Investor Database.csv')
+
+# Side bar (filters, dropdowns, etc)
+inv_categories_drp = list(db_data['Investor Categories']drop_duplicates().sort_values())
+inv_categories_drp.insert(0, 'All')
+inv_categories_drp.remove('Investor')
+                          
+                          
+
+with st.sidebar
+
+# Display the dataframe as output
 st.dataframe(db_data)
