@@ -74,6 +74,10 @@ HQ_country_drp = list(db_data['HQ Country/Territory'].drop_duplicates().sort_val
 HQ_country_drp.insert(0, 'All')
 HQ_country_drp = [item for item in HQ_country_drp if item != '']
 
+HQ_region_drp = list(db_data['HQ Global Region'].drop_duplicates().sort_values())
+HQ_region_drp.insert(0, 'All')
+HQ_region_drp = [item for item in HQ_region_drp if item != '']
+
 with st.sidebar.expander('Filters for Investors'):
     inv_categories = st.multiselect('Investor categories',
                                     inv_categories_drp,
@@ -87,6 +91,10 @@ with st.sidebar.expander('Filters for Investors'):
                                     HQ_country_drp,
                                     'All',
                                     help='HQ countries / territories...')
+    HQ_region = st.multiselect('HQ Regions',
+                                    HQ_region_drp,
+                                    'All',
+                                    help='HQ regions...')
 
 
 
