@@ -66,11 +66,11 @@ inv_categories_drp.insert(0, 'All')
 inv_categories_drp = [item for item in inv_categories_drp if item != '']
 # inv_categories_drp = inv_categories_drp[0:-2]
 
-with st.sidebar.container('Filters for Investors'):
-    inv_categories = st.multiselect('Investor categories',
-                                    inv_categories_drp,
-                                    'All',
-                                    help='Investor categories...')
+# with st.sidebar.container('Filters for Investors'):
+#     inv_categories = st.multiselect('Investor categories',
+#                                     inv_categories_drp,
+#                                     'All',
+#                                     help='Investor categories...')
 
 # Display the dataframe as output
 st.dataframe(db_data)
