@@ -50,11 +50,6 @@ css = f'''
 
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
-#------
-st.markdown(hide_img_fs, unsafe_allow_html=True)
-
-. Let's watch a short [tutorial video](https://drive.google.com/file/d/1SrEui4Qq-7T7k32A6UfsHZRtQpbpfEWa/view?usp=sharing) to get started :eyes:.")
-
 ### Image in sidebar (500 Data and Insights)
 st.sidebar.image(sb_title, width=300)
 
