@@ -53,12 +53,7 @@ st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 #------
 st.markdown(hide_img_fs, unsafe_allow_html=True)
 
-### Image in main panel (Co-investor Network Diagram)
-# st.image(mn_title, width=700)
-
-### User guide expander (Main panel)
-with st.expander('User Guide', expanded=False):
-    st.write("First-time user? It's great to have you. Let's watch a short [tutorial video](https://drive.google.com/file/d/1SrEui4Qq-7T7k32A6UfsHZRtQpbpfEWa/view?usp=sharing) to get started :eyes:.")
+. Let's watch a short [tutorial video](https://drive.google.com/file/d/1SrEui4Qq-7T7k32A6UfsHZRtQpbpfEWa/view?usp=sharing) to get started :eyes:.")
 
 ### Image in sidebar (500 Data and Insights)
 st.sidebar.image(sb_title, width=300)
