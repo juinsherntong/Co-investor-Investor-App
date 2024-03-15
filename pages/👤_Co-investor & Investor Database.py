@@ -80,8 +80,12 @@ HQ_region_drp.insert(0, 'All')
 HQ_region_drp = [item for item in HQ_region_drp if item != '']
 HQ_region_drp = [item for item in HQ_region_drp if pd.notna(item)]
 
+HQ_subregion_drp = list(db_data['HQ Global Sub Region'].drop_duplicates().sort_values())
+HQ_subregion_drp.insert(0, 'All')
+HQ_subregion_drp = [item for item in HQ_subregion_drp if item != '']
+HQ_subregion_drp = [item for item in HQ_subregion_drp if pd.notna(item)]
 
-with st.sidebar.expander('Investor demographic'):
+with st.sidebar.expander('Investor Demographic'):
     inv_categories = st.multiselect('Investor categories',
                                     inv_categories_drp,
                                     'All',
@@ -98,6 +102,10 @@ with st.sidebar.expander('Investor demographic'):
                                     HQ_region_drp,
                                     'All',
                                     help='HQ regions...')
+    HQ_subregion = st.multiselect('HQ Sub-regions',
+                                    HQ_subregion_drp,
+                                    'All',
+                                    help='HQ sub-regions...')
 
 
 
