@@ -123,10 +123,10 @@ with st.sidebar.expander('Investment Preference'):
                                     pref_industry_drp,
                                     'All',
                                     help='Preferred industry...')
-    # pref_verticals = st.multiselect('Preferred vertical',
-    #                                 pref_vertical_drp,
-    #                                 'All',
-    #                                 help='Preferred verticals...')
+    pref_verticals = st.multiselect('Preferred vertical',
+                                    pref_vertical_drp,
+                                    'All',
+                                    help='Preferred verticals...')
 
 # Display the dataframe as output
 st.dataframe(db_data)
