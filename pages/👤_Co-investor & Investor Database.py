@@ -66,11 +66,21 @@ inv_categories_drp.insert(0, 'All')
 inv_categories_drp.remove('Investor')
 inv_categories_drp = [item for item in inv_categories_drp if item != '']
 
+inv_types_drp = list(db_data['Primary Investor Type'].drop_duplicates().sort_values())
+inv_types_drp.insert(0, 'All')
+inv_types_drp = [item for item in inv_types_drp if item != '']
+
 with st.sidebar.expander('Filters for Investors'):
     inv_categories = st.multiselect('Investor categories',
                                     inv_categories_drp,
                                     'All',
                                     help='Investor categories...')
+    inv_types = st.multiselect('Investor types',
+                                    inv_types_drp,
+                                    'All',
+                                    help='Investor types...')
+
+
 
 # Display the dataframe as output
 st.dataframe(db_data)
