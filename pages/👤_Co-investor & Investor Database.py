@@ -69,8 +69,8 @@ inv_categories_drp = [item for item in inv_categories_drp if item != '']
 with st.sidebar.expander('Filters for Investors'):
     inv_categories = st.multiselect('Investor categories',
                                     inv_categories_drp)
-                                    # 'All',
-                                    # help='Investor categories...')
+                                    'All',
+                                    help='Investor categories...')
 
 # Display the dataframe as output
 st.dataframe(inv_categories_drp)
