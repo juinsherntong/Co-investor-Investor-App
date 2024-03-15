@@ -67,7 +67,7 @@ inv_categories_drp.remove('Investor')
                           
                           
 
-with st.sidebar
+# with st.sidebar
 
 # Display the dataframe as output
 st.dataframe(db_data)
