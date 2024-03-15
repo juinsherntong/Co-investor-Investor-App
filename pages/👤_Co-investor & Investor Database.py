@@ -57,5 +57,5 @@ st.image(mn_title, width=700)
 ### Image in sidebar (500 Data and Insights)
 st.sidebar.image(sb_title, width=300)
 
-db_data = pd.DataFramep(d.read_csv('Data/Co-investor & Investor Database.csv'))
+db_data = pd.read_csv('Data/Co-investor & Investor Database.csv')
 st.dataframe(db_data, width=100)
