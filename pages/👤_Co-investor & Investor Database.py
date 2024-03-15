@@ -72,10 +72,12 @@ inv_types_drp = [item for item in inv_types_drp if item != '']
 
 HQ_country_drp = list(db_data['HQ Country/Territory'].drop_duplicates().sort_values())
 HQ_country_drp.insert(0, 'All')
+HQ_country_drp.remove('nan')
 HQ_country_drp = [item for item in HQ_country_drp if item != '']
 
 HQ_region_drp = list(db_data['HQ Global Region'].drop_duplicates().sort_values())
 HQ_region_drp.insert(0, 'All')
+HQ_region_drp.remove('nan')
 HQ_region_drp = [item for item in HQ_region_drp if item != '']
 
 with st.sidebar.expander('Filters for Investors'):
