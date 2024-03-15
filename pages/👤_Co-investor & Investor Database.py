@@ -73,4 +73,4 @@ inv_categories_drp = [item for item in inv_categories_drp if item != '']
 #                                     help='Investor categories...')
 
 # Display the dataframe as output
-st.dataframe(db_data)
+st.dataframe(inv_categories_drp)
