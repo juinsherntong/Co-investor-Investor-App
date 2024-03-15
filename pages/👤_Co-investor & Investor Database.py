@@ -64,7 +64,7 @@ db_data = pd.read_csv('Data/Co-investor & Investor Database.csv')
 inv_categories_drp = list(db_data['Investor Categories'].drop_duplicates().sort_values())
 inv_categories_drp.insert(0, 'All')
 # inv_categories_drp.remove('Investor')
-                          
+
 with st.sidebar.expand('Filters for Investors'):
     inv_categories = st.multiselect('Investor categories',
                                     inv_categories_drp,
