@@ -61,14 +61,14 @@ st.sidebar.image(sidebar_title, width=300)
 db_data = pd.read_csv('Data/Co-investor & Investor Database.csv')
 
 # Side bar (filters, dropdowns, etc)
-inv_categories_drp = list(db_data['Investor Categories'].drop_duplicates().sort_values())
-inv_categories_drp.insert(0, 'All')
+# inv_categories_drp = list(db_data['Investor Categories'].drop_duplicates().sort_values())
+# inv_categories_drp.insert(0, 'All')
 # inv_categories_drp.remove('Investor')
 
 with st.sidebar.expand('Filters for Investors'):
     inv_categories = st.multiselect('Investor categories',
-                                    inv_categories_drp,
-                                    'All',
+                                    # inv_categories_drp,
+                                    # 'All',
                                     help='Investor categories...')
 
 # Display the dataframe as output
