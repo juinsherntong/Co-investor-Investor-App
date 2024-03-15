@@ -70,15 +70,23 @@ inv_types_drp = list(db_data['Primary Investor Type'].drop_duplicates().sort_val
 inv_types_drp.insert(0, 'All')
 inv_types_drp = [item for item in inv_types_drp if item != '']
 
+HQ_country_drp = list(db_data['HQ Country/Territory'].drop_duplicates().sort_values())
+HQ_country_drp.insert(0, 'All')
+HQ_country_drp = [item for item in HQ_country_drp if item != '']
+
 with st.sidebar.expander('Filters for Investors'):
     inv_categories = st.multiselect('Investor categories',
                                     inv_categories_drp,
                                     'All',
                                     help='Investor categories...')
-    inv_types = st.multiselect('Investor types',
+    inv_types = st.multiselect('Primary investor type',
                                     inv_types_drp,
                                     'All',
                                     help='Investor types...')
+    HQ_country = st.multiselect('HQ countries / Territories',
+                                    HQ_country_drp,
+                                    'All',
+                                    help='HQ countries / territories...')
 
 
 
