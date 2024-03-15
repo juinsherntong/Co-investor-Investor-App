@@ -49,7 +49,6 @@ css = f'''
 
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
-#------
 st.markdown(hide_img_fs, unsafe_allow_html=True)
 
 ### Image in main panel (Co-investor Network Diagram)
@@ -57,3 +56,6 @@ st.image(mn_title, width=700)
 
 ### Image in sidebar (500 Data and Insights)
 st.sidebar.image(sb_title, width=300)
+
+db_data = pd.read_csv('Data/Co-investor & Investor Database.csv')
+print(db_data)
