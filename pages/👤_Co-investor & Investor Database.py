@@ -62,7 +62,7 @@ db_data = pd.read_csv('Data/Co-investor & Investor Database.csv')
 
 # Side bar (filters, dropdowns, etc)
 inv_categories_drp = list(db_data['Investor Categories'].drop_duplicates().sort_values())
-# inv_categories_drp.insert(0, 'All')
+inv_categories_drp.insert(0, 'All')
 # inv_categories_drp.remove('Investor')
 
 # with st.sidebar.expand('Filters for Investors'):
