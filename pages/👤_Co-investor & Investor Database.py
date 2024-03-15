@@ -111,6 +111,7 @@ with st.sidebar.expander('Investor Demographic'):
 pref_industry_drp = list(db_data['Preferred Industry'].str.split(', ').explode('Preferred Industry').drop_duplicates().sort_values())
 pref_industry_drp.insert(0, 'All')
 pref_industry_drp = [item for item in pref_industry_drp if item != '']
+pref_industry_drp = [item for item in pref_industry_drp if pd.notna(item)]
 
 with st.sidebar.expander('Investment Preference'):
     pref_industries = st.multiselect('Preferred industry',
