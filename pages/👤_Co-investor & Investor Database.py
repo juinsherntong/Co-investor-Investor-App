@@ -35,9 +35,9 @@ css = f'''
     z-index: 1;
     background: {color};
 }}
-[data-testid="stSidebarNav"] > ul {{
-    padding-top: 2rem;
-}}
+# [data-testid="stSidebarNav"] > ul {{
+#     padding-top: 2rem;
+# }}
 # [data-testid="stSidebarNav"] > div {{
 #     position: absolute;
 #     top: 0;
