@@ -7,8 +7,10 @@ from pyvis.network import Network
 from PIL import Image
 
 # Import images
-sidebar_title = Image.open('Sidebar title.png')
+# sidebar_title = Image.open('Sidebar title.png')
+sidebar_title = Image.open('500_Icons_CR_06_Grey_RGB.png')
 main_title = Image.open('Main title.png')
+
 
 # CSS
 hide_img_fs = '''
