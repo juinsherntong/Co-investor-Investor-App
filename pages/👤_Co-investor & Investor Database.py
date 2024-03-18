@@ -7,7 +7,7 @@ from pyvis.network import Network
 from PIL import Image
 
 # Import images
-sidebar_title = Image.open('Sidebar title.png')
+# sidebar_title = Image.open('Sidebar title.png')
 main_title = Image.open('Main title.png')
 
 # CSS
@@ -55,7 +55,7 @@ st.markdown(hide_img_fs, unsafe_allow_html=True)
 st.image(main_title, width=700)
 
 # Image in sidebar (500 Data and Insights)
-st.sidebar.image(sidebar_title, width=300)
+# st.sidebar.image(sidebar_title, width=300)
 
 # Read CSV file (Co-investor & Investor Database.csv)
 db_data = pd.read_csv('Data/Co-investor & Investor Database.csv')
