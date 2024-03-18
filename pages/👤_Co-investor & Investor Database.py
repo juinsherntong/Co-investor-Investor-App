@@ -10,14 +10,6 @@ from PIL import Image
 sidebar_title = Image.open('Sidebar title.png')
 main_title = Image.open('Main title.png')
 
-st.markdown(hide_img_fs, unsafe_allow_html=True)
-
-# Image in main panel (Co-investor / Investor DB)
-st.image(main_title, width=700)
-
-# Image in sidebar (500 Data and Insights)
-st.sidebar.image(sidebar_title, width=300)
-
 # CSS
 hide_img_fs = '''
 <style>
@@ -57,13 +49,13 @@ button[title="View fullscreen"]{
 
 # st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
-# st.markdown(hide_img_fs, unsafe_allow_html=True)
+st.markdown(hide_img_fs, unsafe_allow_html=True)
 
-# # Image in main panel (Co-investor / Investor DB)
-# st.image(main_title, width=700)
+# Image in main panel (Co-investor / Investor DB)
+st.image(main_title, width=700)
 
-# # Image in sidebar (500 Data and Insights)
-# st.sidebar.image(sidebar_title, width=300)
+# Image in sidebar (500 Data and Insights)
+st.sidebar.image(sidebar_title, width=300)
 
 # Read CSV file (Co-investor & Investor Database.csv)
 db_data = pd.read_csv('Data/Co-investor & Investor Database.csv')
