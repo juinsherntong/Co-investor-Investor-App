@@ -35,9 +35,9 @@ css = f'''
 #     z-index: 1;
 #     background: {color};
 # }}
-# [data-testid="stSidebarNav"] > ul {{
-#     padding-top: 2rem;
-# }}
+[data-testid="stSidebarNav"] > ul {{
+    padding-top: 2rem;
+}}
 [data-testid="stSidebarNav"] > div {{
     position: absolute;
     top: 0;
@@ -47,7 +47,7 @@ css = f'''
 }}
 '''
 
-# st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
+st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
 st.markdown(hide_img_fs, unsafe_allow_html=True)
 
