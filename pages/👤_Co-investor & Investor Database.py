@@ -38,10 +38,10 @@ css = f'''
 [data-testid="stSidebarNav"] > ul {{
     padding-top: 2rem;
 }}
-# [data-testid="stSidebarNav"] > div {{
-#     position: absolute;
-#     top: 0;
-# }}
+[data-testid="stSidebarNav"] > div {{
+    position: absolute;
+    top: 0;
+}}
 # [data-testid="stSidebarNav"] > div > svg {{
 #     transform: rotate(180deg) !important;
 # }}
