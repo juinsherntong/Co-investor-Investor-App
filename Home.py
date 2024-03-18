@@ -34,4 +34,4 @@ st.markdown(hide_img_fs, unsafe_allow_html=True)
 st.image(main_title, width=700)
 
 # Image in sidebar (500 Data and Insights)
-st.sidebar.image(sidebar_title, width=200)
+st.sidebar.image(sidebar_title, width=100)
