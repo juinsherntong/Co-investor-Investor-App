@@ -11,20 +11,20 @@ sidebar_title = Image.open('Sidebar title.png')
 main_title = Image.open('Main title.png')
 
 # CSS
-hide_img_fs = '''
-<style>
-button[title="View fullscreen"]{
-    visibility: hidden;}  
+# hide_img_fs = '''
+# <style>
+# button[title="View fullscreen"]{
+#     visibility: hidden;}  
 
-.css-5uatcg {
-    background-color: #0E1117;
-    color: #FFFFFF;
-    border: 1px solid #D2D2D2;
-    position: absolute;
-    left: 82%;
-    border-radius: 8px;}  
-</style>
-'''
+# .css-5uatcg {
+#     background-color: #0E1117;
+#     color: #FFFFFF;
+#     border: 1px solid #D2D2D2;
+#     position: absolute;
+#     left: 82%;
+#     border-radius: 8px;}  
+# </style>
+# '''
 
 # color = '' #'#262730'
 
