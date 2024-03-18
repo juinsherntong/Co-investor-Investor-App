@@ -28,8 +28,31 @@ button[title="View fullscreen"]{
 
 st.markdown(hide_img_fs, unsafe_allow_html=True)
 
+def add_logo():
+    st.markdown(
+        """
+        <style>
+            [data-testid="stSidebarNav"] {
+                background-image: url(http://placekitten.com/200/200);
+                background-repeat: no-repeat;
+                padding-top: 120px;
+                background-position: 20px 20px;
+            }
+            [data-testid="stSidebarNav"]::before {
+                content: "My Company Name";
+                margin-left: 20px;
+                margin-top: 20px;
+                font-size: 30px;
+                position: relative;
+                top: 100px;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
 # Image in main panel (Co-investor / Investor DB)
 st.image(main_title, width=700)
 
 # Image in sidebar (500 Data and Insights)
-st.sidebar.image(sidebar_title, width=300)
+add_logo(st.sidebar.image(sidebar_title, width=300))
