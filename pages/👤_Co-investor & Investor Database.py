@@ -10,7 +10,7 @@ from PIL import Image
 sidebar_title = Image.open('Sidebar title.png')
 main_title = Image.open('Main title.png')
 
-CSS
+# CSS
 hide_img_fs = '''
 <style>
 button[title="View fullscreen"]{
