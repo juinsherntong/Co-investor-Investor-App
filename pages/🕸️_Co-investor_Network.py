@@ -7,7 +7,6 @@ from pyvis.network import Network
 from PIL import Image
 
 # Import images
-sb_title = Image.open('Sidebar title.png')
 mn_title = Image.open('Main title.png')
 legend = Image.open('Legend.png')
 
@@ -27,30 +26,29 @@ button[title="View fullscreen"]{
 </style>
 '''
 
-color = '' #'#262730'
+# color = '' #'#262730'
 
-css = f'''
-[data-testid="stSidebarNav"] {{
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    background: {color};
-}}
-[data-testid="stSidebarNav"] > ul {{
-    padding-top: 2rem;
-}}
-[data-testid="stSidebarNav"] > div {{
-    position: absolute;
-    top: 0;
-}}
-[data-testid="stSidebarNav"] > div > svg {{
-    transform: rotate(180deg) !important;
-}}
-'''
+# css = f'''
+# [data-testid="stSidebarNav"] {{
+#     position: absolute;
+#     bottom: 0;
+#     z-index: 1;
+#     background: {color};
+# }}
+# [data-testid="stSidebarNav"] > ul {{
+#     padding-top: 2rem;
+# }}
+# [data-testid="stSidebarNav"] > div {{
+#     position: absolute;
+#     top: 0;
+# }}
+# [data-testid="stSidebarNav"] > div > svg {{
+#     transform: rotate(180deg) !important;
+# }}
+# '''
 
-st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
+# st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
-#------
 st.markdown(hide_img_fs, unsafe_allow_html=True)
 
 ### Image in main panel (Co-investor Network Diagram)
@@ -61,7 +59,7 @@ with st.expander('User Guide', expanded=False):
     st.write("First-time user? It's great to have you. Let's watch a short [tutorial video](https://drive.google.com/file/d/1SrEui4Qq-7T7k32A6UfsHZRtQpbpfEWa/view?usp=sharing) to get started :eyes:.")
 
 ### Image in sidebar (500 Data and Insights)
-st.sidebar.image(sb_title, width=300)
+# st.sidebar.image(sb_title, width=300)
 
 ### Company Types - Sidebar (expander)
 with st.sidebar.expander('Company Type'):    
