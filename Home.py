@@ -32,7 +32,3 @@ st.markdown(hide_img_fs, unsafe_allow_html=True)
 
 # Image in main panel (Co-investor / Investor DB)
 st.image(main_title, width=700)
-
-# Image in sidebar (500 Data and Insights)
-# st.sidebar.image(sidebar_title, use_column_width="auto")
-st.markdown("""---""")
