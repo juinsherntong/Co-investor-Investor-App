@@ -1,3 +1,4 @@
+# Import libraries and packages
 import streamlit as st
 import streamlit.components.v1 as components
 import pandas as pd
@@ -5,63 +6,30 @@ import networkx as nx
 from pyvis.network import Network
 from PIL import Image
 
-st.set_page_config(
-  page_title = 'Co-investor / Investor Search App'
-)
+# Import images
+sidebar_title = Image.open('Sidebar title.png')
+main_title = Image.open('Main title.png')
 
-### Import images
-sb_title = Image.open('Sidebar title.png')
-mn_title = Image.open('Main title.png')
-
-### CSS + Streamlit markdown (Edit layout and aesthetics)
+# CSS
 hide_img_fs = '''
 <style>
 button[title="View fullscreen"]{
     visibility: hidden;}  
+
+.css-5uatcg {
+    background-color: #0E1117;
+    color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    position: absolute;
+    left: 82%;
+    border-radius: 8px;}  
 </style>
 '''
 
 st.markdown(hide_img_fs, unsafe_allow_html=True)
 
-### Image in main panel (Co-investor Network Diagram)
-st.image(mn_title, width=700)
+# Image in main panel (Co-investor / Investor DB)
+st.image(main_title, width=700)
 
-### Image in sidebar (500 Data and Insights)
-st.sidebar.image(sb_title, width=300)
-
-streamlit_style = """
-			<style>
-			@import url('https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet');
-
-			html, body, [class*="css"]  {
-			font-family: 'Roboto', sans-serif;
-			}
-			</style>
-			"""
-
-st.markdown(streamlit_style, unsafe_allow_html=True)
-
-#____
-# Correct color for dark mode
-color = '' #'#262730'
-
-css = f'''
-[data-testid="stSidebarNav"] {{
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    background: {color};
-}}
-[data-testid="stSidebarNav"] > ul {{
-    padding-top: 2rem;
-}}
-[data-testid="stSidebarNav"] > div {{
-    position: absolute;
-    top: 0;
-}}
-[data-testid="stSidebarNav"] > div > svg {{
-    transform: rotate(180deg) !important;
-}}
-'''
-
-st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
+# Image in sidebar (500 Data and Insights)
+st.sidebar.image(sidebar_title, width=300)
