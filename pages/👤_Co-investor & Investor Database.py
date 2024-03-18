@@ -10,42 +10,42 @@ from PIL import Image
 sidebar_title = Image.open('Sidebar title.png')
 main_title = Image.open('Main title.png')
 
-# CSS
-# hide_img_fs = '''
-# <style>
-# button[title="View fullscreen"]{
-#     visibility: hidden;}  
+CSS
+hide_img_fs = '''
+<style>
+button[title="View fullscreen"]{
+    visibility: hidden;}  
 
-# .css-5uatcg {
-#     background-color: #0E1117;
-#     color: #FFFFFF;
-#     border: 1px solid #D2D2D2;
-#     position: absolute;
-#     left: 82%;
-#     border-radius: 8px;}  
-# </style>
-# '''
+.css-5uatcg {
+    background-color: #0E1117;
+    color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    position: absolute;
+    left: 82%;
+    border-radius: 8px;}  
+</style>
+'''
 
-# color = '' #'#262730'
+color = '' #'#262730'
 
-# css = f'''
-# [data-testid="stSidebarNav"] {{
-#     position: absolute;
-#     # bottom: 0;
-#     z-index: 1;
-#     background: {color};
-# }}
-# [data-testid="stSidebarNav"] > ul {{
-#     padding-top: 2rem;
-# }}
-# [data-testid="stSidebarNav"] > div {{
-#     position: absolute;
-#     top: 0;
-# }}
-# [data-testid="stSidebarNav"] > div > svg {{
-#     transform: rotate(180deg) !important;
-# }}
-# '''
+css = f'''
+[data-testid="stSidebarNav"] {{
+    position: absolute;
+    # bottom: 0;
+    z-index: 1;
+    background: {color};
+}}
+[data-testid="stSidebarNav"] > ul {{
+    padding-top: 2rem;
+}}
+[data-testid="stSidebarNav"] > div {{
+    position: absolute;
+    top: 0;
+}}
+[data-testid="stSidebarNav"] > div > svg {{
+    transform: rotate(180deg) !important;
+}}
+'''
 
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
