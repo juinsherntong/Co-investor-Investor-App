@@ -8,7 +8,7 @@ from PIL import Image
 
 # Import images
 # sidebar_title = Image.open('Sidebar title.png')
-sidebar_title = Image.open('500_Icons_CR_06_Grey_RGB.png')
+sidebar_title = Image.open('Sidebar icon.png')
 main_title = Image.open('Main title.png')
 
 
