@@ -26,28 +26,7 @@ button[title="View fullscreen"]{
 </style>
 '''
 
-# color = '' #'#262730'
 
-# css = f'''
-# [data-testid="stSidebarNav"] {{
-#     # position: absolute;
-#     # bottom: 0%;
-#     # z-index: 1;
-#     # background: {color};
-# }}
-# [data-testid="stSidebarNav"] > ul {{
-#     padding-top: 2rem;
-# }}
-# [data-testid="stSidebarNav"] > div {{
-#     position: absolute;
-#     top: 0;
-# }}
-# [data-testid="stSidebarNav"] > div > svg {{
-#     transform: rotate(360deg) !important;
-# }}
-'''
-
-# st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
 st.markdown(hide_img_fs, unsafe_allow_html=True)
 
