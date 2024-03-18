@@ -7,7 +7,7 @@ from pyvis.network import Network
 from PIL import Image
 
 # Import images
-# sidebar_title = Image.open('Sidebar title.png')
+sidebar_title = Image.open('Sidebar title.png')
 main_title = Image.open('Main title.png')
 
 # CSS
