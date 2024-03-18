@@ -30,8 +30,8 @@ color = '' #'#262730'
 
 css = f'''
 [data-testid="stSidebarNav"] {{
-    position: absolute;
-    top: 0;
+    position: fixed;
+    bottom: 0;
     z-index: 1;
     background: {color};
 }}
