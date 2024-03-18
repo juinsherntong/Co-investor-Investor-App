@@ -47,7 +47,7 @@ css = f'''
 # }}
 # '''
 
-# st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
+st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
 st.markdown(hide_img_fs, unsafe_allow_html=True)
 
