@@ -45,7 +45,7 @@ button[title="View fullscreen"]{
 # [data-testid="stSidebarNav"] > div > svg {{
 #     transform: rotate(180deg) !important;
 # }}
-'''
+# '''
 
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
