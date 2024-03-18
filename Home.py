@@ -6,7 +6,7 @@ from pyvis.network import Network
 from PIL import Image
 
 st.set_page_config(
-  page_title = 'Multipages App'
+  page_title = 'Co-investor / Investor Search App'
 )
 
 ### Import images
