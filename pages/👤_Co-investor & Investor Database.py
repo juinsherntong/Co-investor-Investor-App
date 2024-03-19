@@ -73,17 +73,17 @@ with st.sidebar.expander("Filters for Investors' Demographic"):
                                     'All',
                                     help='Investor Types include detailed options within the broad categories of Angels/Incubators, VC, PE, Strategic Acquirers, and Others (Source: PitchBook)')
     
-    HQ_country = st.multiselect("Investors' Headquarters Country/Territory",
+    HQ_country = st.multiselect("Investors' HQ Country/Territory",
                                     HQ_country_drp,
                                     'All',
                                     help="Investors' Headquarters Country/Territory denotes the geographical location where the investor's main headquarters is situated (Sourced: PitchBook).")
                                     
-    HQ_region = st.multiselect("Investors' Headquarters Regions",
+    HQ_region = st.multiselect("Investors' HQ Regions",
                                     HQ_region_drp,
                                     'All',
                                     help="Investors' Headquarters Regions indicates the geographic area where the investor's primary headquarters is located (Sourced: PitchBook).")
                                     
-    HQ_subregion = st.multiselect("Investors' Headquarters Sub-regions",
+    HQ_subregion = st.multiselect("Investors' HQ Sub-regions",
                                     HQ_subregion_drp,
                                     'All',
                                     help="Investors' Headquarters Sub-regions refers to the specific geographic area where the investor's main headquarters is situated (Sourced: PitchBook).")
