@@ -104,7 +104,7 @@ pref_inv_type_drp.insert(0, 'All')
 pref_inv_type_drp = [item for item in pref_inv_type_drp if item != '']
 pref_inv_type_drp = [item for item in pref_inv_type_drp if pd.notna(item)]
 
-with st.sidebar.expander("Filters for Investors' Investment Preference"):
+with st.sidebar.expander("Filters for Investors' Preference"):
     pref_industries = st.multiselect("Investors' industry preference(s)",
                                     pref_industry_drp,
                                     'All',
