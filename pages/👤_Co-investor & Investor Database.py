@@ -108,7 +108,7 @@ with st.sidebar.expander("Filters for Investors' Investment Preference"):
     pref_industries = st.multiselect("Investors' industry preference(s)",
                                     pref_industry_drp,
                                     'All',
-                                    help='These industries follow PitchBook's taxonomy and not 500's (Source: PitchBook)')
+                                    help="These industries follow PitchBook's taxonomy and not 500's (Source: PitchBook)")
                                     
     pref_verticals = st.multiselect("Investors' vertical preference(s)",
                                     pref_vertical_drp,
