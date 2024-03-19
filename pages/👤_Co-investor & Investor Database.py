@@ -113,12 +113,12 @@ with st.sidebar.expander("Filters for Investors' Investment Preference"):
     pref_verticals = st.multiselect("Investors' vertical preference(s)",
                                     pref_vertical_drp,
                                     'All',
-                                    help='PitchBook verticals as defined here <https://pitchbook.com/what-are-industry-verticals>. Note that 500's portfolio company verticals (as seen in Salesforce) are more expansive. (Source: PitchBook)')
+                                    help="PitchBook verticals as defined here <https://pitchbook.com/what-are-industry-verticals>. Note that 500's portfolio company verticals (as seen in Salesforce) are more expansive. (Source: PitchBook)")
                                     
     pref_inv_types = st.multiselect("Investors' preferred deal type(s)",
                                     pref_inv_type_drp,
                                     'All',
-                                    help='(Source: PitchBook)')
+                                    help="(Source: PitchBook)")
 
 # Display the dataframe as output
 st.dataframe(db_data)
